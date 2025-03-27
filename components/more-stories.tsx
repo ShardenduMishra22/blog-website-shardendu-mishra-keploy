@@ -32,7 +32,7 @@ export default function MoreStories({
   const currentPosts = filteredPosts.slice(startIndex, startIndex + postsPerPage);
 
   const getVisiblePageNumbers = () => {
-    const delta = 2;
+    const delta = 2; // Number of pages to show on each side of current page
     const range = [];
     const rangeWithDots = [];
 
