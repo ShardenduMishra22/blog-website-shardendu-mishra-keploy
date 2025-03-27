@@ -10,7 +10,7 @@ export default function MoreStories({
   isIndex,
 }: {
   posts: { node: Post }[];
-  isCommunity: boolean;
+  isCommunity: boolean; 
   isIndex: boolean;
 }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,7 +32,7 @@ export default function MoreStories({
   const currentPosts = filteredPosts.slice(startIndex, startIndex + postsPerPage);
 
   const getVisiblePageNumbers = () => {
-    const delta = 2; // Number of pages to show on each side of current page
+    const delta = 2;
     const range = [];
     const rangeWithDots = [];
 

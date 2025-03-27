@@ -137,7 +137,8 @@ export async function getAllPosts() {
 
   while (hasNextPage) {
     const data = await fetchAPI(
-      `query AllPosts($after: String) {
+      `
+      query AllPosts($after: String) {
         posts(first: 6, after: $after, where: { orderby: { field: DATE, order: DESC } }) {
           edges {
             node {
